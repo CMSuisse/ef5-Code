@@ -8,6 +8,11 @@ Clock = pygame.time.Clock()
 
 origin = (display_size[0]/2, display_size[1]/2)
 
+for x in display_size[0]:
+    for y in display_size[1]:
+        point_on_plane = complex(x/200, y/200)
+        
+
 active = True
 while active:
     for event in pygame.event.get():
