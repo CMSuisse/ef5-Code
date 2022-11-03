@@ -34,7 +34,6 @@ def display_output(output_array):
         print(bit, end=" ")
     print("\n") #Creature comfort
 
-
 number_to_convert = int(input("What number should be converted? "))
 binary_number = convert_to_decimal(number_to_convert)
 hex_number = convert_to_hex(number_to_convert)

@@ -8,12 +8,11 @@ csv_reader = csv.reader(f, delimiter = ";")
 datum = []
 schritte = []
 
-for i, line in enumerate(csv_reader, 1):
-    if i == 1:
-        print(line[2])
-    else:
+for i, line in enumerate(csv_reader):
+    print(i)
+    if i != 0:
         datum.append(line[0])
-        schritte.append(int(line[1]))
+        schritte.append(int(line[2]))
 
 print(datum)
 f.close()
