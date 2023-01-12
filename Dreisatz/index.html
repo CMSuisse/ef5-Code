@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>Dreisatzrechner</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+    <h1>Dreisatzrechner</h1>
+    <p>Fügen Sie Ihre Zahlen in die grünen Felder ein lassen Sie das Programm die letzte Zahl berechnen!</p>
+    <div class="dreisatz">
+        <div class="column">
+            <div class="number">
+                <label for="number-1">Nummer 1</label>
+                <input required type="number" id="number-1" class="number -input"/>
+            </div>
+            <div class="number">
+                <label for="number-2">Nummer 2</label>
+                <input required type="number" id="number-2" class="number -input"/>
+            </div>
+            <button type="submit" id="calculate" onclick=calculate()>Berechnen</button>
+        </div>
+        <div class="column">
+            <div class="number">
+                <label for="number-3">Nummer 3</label>
+                <input required type="number" id="number-3" class="number -input"/>
+            </div>
+            <div class="number">
+                <label for="solution">Nummer 4</label>
+                <input readonly value="" type="number" id="solution" class="number -output"/>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
