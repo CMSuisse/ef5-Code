@@ -6,5 +6,6 @@ function calculate(){
 
     var relation_number_1_to_number_2 = number_2/number_1;
     var solution_number = number_3 * relation_number_1_to_number_2;
+    console.log(solution_number);
     solution.value = solution_number;
 }
