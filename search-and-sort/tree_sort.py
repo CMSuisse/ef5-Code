@@ -2,7 +2,7 @@ from random import randint
 
 class Node():
     def __init__(self, key):
-        # This is the value of the node (0 when nothing is specified)
+        # This is the value of the node
         self.key = key
         # The node's children
         # Left node should be lower, right node bigger than the key
@@ -29,6 +29,7 @@ def insert_key(root, key):
 # Function to create the binary search tree
 def create_tree(array):
     global root
+    # Set the first element of the list as the root of the tree
     root = Node(array[0])
     del array[0]
     for element in array:
