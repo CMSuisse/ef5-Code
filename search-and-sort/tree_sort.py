@@ -40,7 +40,7 @@ def convert_tree_to_array(root):
     if root != None:
         # Go left until no child node exists
         convert_tree_to_array(root.left)
-        # Append the value of the left-most node to the array
+        # Append the value of the last parent node
         sorted_array.append(root.key)
         # Then move right one node and repeat
         convert_tree_to_array(root.right)
@@ -49,7 +49,7 @@ def convert_tree_to_array(root):
 unsorted_array = []
 sorted_array = []
 # Create the unsorted array
-for i in range(10):
+for i in range(1000):
     unsorted_array.append(randint(1, 100))
 print(unsorted_array)
 # Create the tree
